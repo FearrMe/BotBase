@@ -16,6 +16,7 @@ public class Help extends Command {
 
     @Override
     public void execute(MessageReceivedEvent event) {
+        queueMessage(event, "this is an empty help command");
         // TODO: implement help command
     }
 }

@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
         jda = new JDABuilder(AccountType.BOT).setToken("TOKEN").buildBlocking();
-        jda.getPresence().setGame(Game.playing("bb!help"));
+        jda.getPresence().setGame(Game.playing("b!help"));
 
         try {
             jda.addEventListener(new MessageHandler(args[0]));
